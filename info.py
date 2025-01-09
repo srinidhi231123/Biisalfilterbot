@@ -13,26 +13,26 @@ def is_enabled(value, default):
         return default
 
 #main variables
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', '6165486744:AAFW3C6588558QbLWfRD_-ddGAWAfY')
+API_ID = int(environ.get('API_ID', '29610881'))
+API_HASH = environ.get('API_HASH', '81d92754c9e7e7be225bf656e04e6f45')
+BOT_TOKEN = environ.get('BOT_TOKEN', '6871508979:AAEY0BYUb-KXcEA_mOPkNAedhZsr68awuMY')
 
 ADMINS = [int(admin) if id_pattern.search(admin) else admin for admin in environ.get('ADMINS', '1291610043').split()]
 USERNAME = environ.get('USERNAME', "https://telegram.me/GN08M")
 LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '-1001906074061'))
-MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+4RB2-U2o9yE4ZmQ9')
+MOVIE_GROUP_LINK = environ.get('MOVIE_GROUP_LINK', 'https://t.me/+eeo0iaqCDBllYWZl')
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '-1001921446982').split()]
 DATABASE_URI = environ.get('DATABASE_URI', "mongodb+srv://gopinath2483:reduhdtamil@cluster0.dvxzi.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 DATABASE_NAME = environ.get('DATABASE_NAME', "Clustor0")
-COLLECTION_NAME = environ.get('COLLECTION_NAME', 'my_tg_files')
+COLLECTION_NAME = environ.get('COLLECTION_NAME', 'My_Tg_files')
 LOG_API_CHANNEL = int(environ.get('LOG_API_CHANNEL', '-1001906074061'))
 QR_CODE = environ.get('QR_CODE', 'https://graph.org/file/ccb9db43e62a2e524928e.jpg')
-START_IMG = environ.get('START_IMG', 'https://graph.org/file/4dad0cc16f190468454ee.jpg')
+START_IMG = environ.get('START_IMG', 'https://graph.org/file/2bf5bb32bbc4ee87099d7.jpg')
 BIN_CHANNEL = int(environ.get('BIN_CHANNEL','-1001906074061'))
 DELETE_CHANNELS = int(environ.get('DELETE_CHANNELS','-1001906074061'))
 URL = environ.get('URL', 'mytestbot-jvdfhbj.com')
-STICKERS_IDS = ('CAACAgQAAxkBAAEK99dlfC7LDqnuwtGRkIoacot_dGC4zQACbg8AAuHqsVDaMQeY6CcRojME').split()
+STICKERS_IDS = ('CAACAgUAAxkBAAL83GeACMeNq55GU_hChiTdn-s0PVlyAALKEgACVYqZVaz5loX6AXq8NgQ').split()
 FILE_AUTO_DEL_TIMER = int(environ.get('FILE_AUTO_DEL_TIMER', '600'))
 IS_VERIFY = is_enabled('IS_VERIFY', True)
 LOG_VR_CHANNEL = int(environ.get('LOG_VR_CHANNEL', '-1001906074061'))
@@ -72,7 +72,7 @@ IMDB_TEMPLATE = environ.get('IMDB_TEMPLATE', f'{script.IMDB_TEMPLATE_TXT}')
 LONG_IMDB_DESCRIPTION = is_enabled('LONG_IMDB_DESCRIPTION', False)
 PROTECT_CONTENT = is_enabled('PROTECT_CONTENT', False)
 SPELL_CHECK = is_enabled('SPELL_CHECK', True)
-LINK_MODE = is_enabled('LINK_MODE', True)
+LINK_MODE = is_enabled('LINK_MODE', False)
 SETTINGS = {
             'spell_check': SPELL_CHECK,
             'auto_filter': AUTO_FILTER,
